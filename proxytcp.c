@@ -162,7 +162,7 @@ void handle_connection(int client_sock, int server_sock, int otimizacao_ativa, F
 
 int main(int argc, char *argv[]) {
 
-    int listen_sock, client_sock, server_sock; //Cria socket passivo, socket cliente e socket servidor
+    int listen_sock, client_sock, server_sock; //Cria variáveis ao socket passivo, socket cliente e socket servidor
     struct sockaddr_in proxy_addr, server_addr, client_addr; //Cria espaços de memória para adicionar endereços
     socklen_t client_len = sizeof(client_addr); //Tamanho da memória para adicionar os endereços 
     int otimizacao_ativa = 0; 
@@ -236,3 +236,4 @@ int main(int argc, char *argv[]) {
     close(listen_sock);
     return 0;
 }
+
